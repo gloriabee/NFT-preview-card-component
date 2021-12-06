@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --Softblue:hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg:hsl(216, 50%, 16%);
+    --line:hsl(215, 32%, 27%);
+    --white:hsl(0, 0%, 100%);
+}
+*{
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    min-height: 100vh;
+    font-size: 11px;
+    padding: 15px;
+    background: var(--main-bg);
+    color: var(--Softblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.card{
+    width: 250px;
+    border: 1px solid #111;
+    border-radius: 10px;
+    background-color: var(--card-bg) ;
+    display: inline-block;
+
+}
+.card-body{
+    padding: 15px;
+}
+
+.card-title{
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.card-paragraph{
+    margin-bottom: 0;
+    color: var(--Softblue);
+    font-size: 12px;
+    line-height: 2;
+}
+
+
+.card-img{
+    width: 100%;
+   margin-bottom: 0;
+   border-radius: 10px;
+}
+
+
+
+
+.text-center{
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+    padding: 5px;
+}
+
+.rate{
+    color: var(--cyan);
+}
+
+.time{
+    color: var(--Softblue);
+}
+
+.card-profile{
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    margin: 10px 0;
+    margin-right: 15px;
+    width: 30px;
+
+}
+
+span{
+    color: var(--white);
+}
+
+.card-title:hover,span:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    
+}
+
+.container {
+    position: relative;
+   overflow: hidden;
+   margin: auto;
+}
+.container .overlay{
+    background: rgba(37, 190, 196, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    border-radius: 10px;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.preview i{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    font-size: 30px;
+    color: var(--white);
+}
+
+.container:hover .preview i{
+    opacity: 1;
+    transition: 0.5s;
+}
