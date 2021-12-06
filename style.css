@@ -17,7 +17,7 @@
 body{
     overflow: hidden;
     min-height: 100vh;
-    font-size: 11px;
+    font-size: 12px;
     padding: 15px;
     background: var(--main-bg);
     color: var(--Softblue);
@@ -29,7 +29,7 @@ body{
 
 
 .card{
-    width: 350px;
+    width: 300px;
     border: 1px solid #111;
     border-radius: 10px;
     background-color: var(--card-bg) ;
@@ -41,7 +41,7 @@ body{
 }
 
 .card-title{
-    font-size: 15px;
+    font-size: 19px;
     font-weight: bold;
     color: var(--white);
 }
@@ -49,7 +49,7 @@ body{
 .card-paragraph{
     margin-bottom: 0;
     color: var(--Softblue);
-    font-size: 12px;
+    font-size: 15px;
     line-height: 2;
 }
 
